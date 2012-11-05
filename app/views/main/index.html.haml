@@ -19,16 +19,16 @@
           %a{:href => "http://bostonbuilt.org/"}
             = image_tag "logos/bostonbuilt.png", :alt => t("sponsors.built"), :title => t("sponsors.built")
         #col2
-          %a{:href => "http://www.cityofboston.gov/"}
-            = image_tag "logos/boston.png", :alt => t("sponsors.city"), :title => t("sponsors.city")
+          %a{:href => "http://www.vbgov.com/"}
+            = image_tag "logos/vb.png", :alt => t("sponsors.city"), :title => t("sponsors.city")
           %p#mayor
-            %a{:href => "http://www.cityofboston.gov/mayor/"}
+            %a{:href => "http://www.vbgov.com/government/departments/city-clerk/mayor/"}
               = "#{t("sponsors.mayor.name")},"
               %em
                 = t("sponsors.mayor.title")
       #feedback
         %p
-          %a{:href => URI.escape("mailto:adoptahydrant@cityofboston.gov?subject=#{t("titles.main", :thing => t("defaults.thing").titleize)} - #{t("links.feedback").titleize}")}
+          %a{:href => URI.escape("mailto:adoptahydrant@vbgov.com?subject=#{t("titles.main", :thing => t("defaults.thing").titleize)} - #{t("links.feedback").titleize}")}
             = t("links.feedback")
     .table-cell.map-container
       #map

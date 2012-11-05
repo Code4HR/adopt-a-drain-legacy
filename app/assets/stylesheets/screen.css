@@ -155,11 +155,15 @@ a.btn {
   width: 100px;
 }
 
+.sidebar #logos #col2 img {
+  height: 80px;
+}
+
 .sidebar #mayor {
   font-family: "Times New Roman", Times, serif;
   font-size: 8px;
   padding: 0;
-  margin: -5px 0 0 0;
+  margin: -5px -5px 0 0;
 }
 
 .sidebar #mayor a, .sidebar #mayor a:active, .sidebar #mayor a:hover, .sidebar #mayor a:visited {

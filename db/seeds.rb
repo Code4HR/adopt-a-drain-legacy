@@ -1,5 +1,7 @@
 # Data from city
 
+# See the following for explanation of this code
+# https://github.com/codeforamerica/adopt-a-hydrant/issues/13#issuecomment-9976743
 class Thing < ActiveRecord::Base
   attr_accessible :city_id, :lng, :lat	
 end

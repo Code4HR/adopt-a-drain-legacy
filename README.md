@@ -29,6 +29,15 @@ This application requires [Postgres](http://www.postgresql.org/) to be installed
 ## Seed Data
     bundle exec rake db:seed
 
+Raw data for VB storm drains came in shapefile and was used to create seeds.rb. Data and utilities can be found in vb_storm_data.
+
+1. Download GDAL, which contains the ogr2ogr utility.
+2. Convert the shapefile to GeoJSON using the following command.
+
+    ogr2ogr -f GeoJSON -t_srs EPSG:4326 storm_catch.json Storm_Catch_Basin.shp
+    
+3. Open json_to_ruby.py and modify the input and output file paths to be correct for your system then run the script.
+
 ## Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help
 improve this project.

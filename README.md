@@ -7,12 +7,6 @@ Claim responsibility for shoveling out a fire hydrant after it snows.
 ## Screenshot
 ![Adopt-a-Hydrant](https://github.com/codeforamerica/adopt-a-hydrant/raw/master/screenshot.png "Adopt-a-Hydrant")
 
-## Demo
-You can see a running version of the application at
-[http://protected-garden-1732.herokuapp.com][demo].
-
-[demo]: http://protected-garden-1732.herokuapp.com
-
 ## Installation
 This application requires [Postgres](http://www.postgresql.org/) to be installed
 

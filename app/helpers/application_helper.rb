@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def us_states
+  def us_states # rubocop:disable MethodLength
     [
       ['Massachusetts', 'MA'],
       ['Alabama', 'AL'],
@@ -53,7 +53,7 @@ module ApplicationHelper
       ['Washington', 'WA'],
       ['West Virginia', 'WV'],
       ['Wisconsin', 'WI'],
-      ['Wyoming', 'WY']
+      ['Wyoming', 'WY'],
     ]
   end
 end

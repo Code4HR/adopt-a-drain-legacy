@@ -1,8 +1,14 @@
-# Adopt-a-Hydrant [![Build Status](https://secure.travis-ci.org/codeforamerica/adopt-a-hydrant.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/codeforamerica/adopt-a-hydrant.png?travis)][gemnasium]
-Claim responsibility for shoveling out a fire hydrant after it snows.
+# Adopt-a-Hydrant
+
+[![Build Status](http://img.shields.io/travis/codeforamerica/adopt-a-hydrant.svg)][travis]
+[![Dependency Status](http://img.shields.io/gemnasium/codeforamerica/adopt-a-hydrant.svg)][gemnasium]
+[![Coverage Status](http://img.shields.io/coveralls/codeforamerica/adopt-a-hydrant.svg)][coveralls]
 
 [travis]: http://travis-ci.org/codeforamerica/adopt-a-hydrant
 [gemnasium]: https://gemnasium.com/codeforamerica/adopt-a-hydrant
+[coveralls]: https://coveralls.io/r/codeforamerica/adopt-a-hydrant
+
+Claim responsibility for shoveling out a fire hydrant after it snows.
 
 ## Screenshot
 ![Adopt-a-Hydrant](https://github.com/codeforamerica/adopt-a-hydrant/raw/master/screenshot.png "Adopt-a-Hydrant")
@@ -84,7 +90,7 @@ Ideally, a bug report should include a pull request with failing specs.
 [pr]: http://help.github.com/send-pull-requests/
 
 ## Supported Ruby Version
-This library aims to support and is [tested against][travis] Ruby version 1.9.3.
+This library aims to support and is [tested against][travis] Ruby version 2.3.0.
 
 If something doesn't work on this version, it should be considered a bug.
 
@@ -99,7 +105,7 @@ timely fashion. If critical issues for a particular implementation exist at the
 time of a major release, support for that Ruby version may be dropped.
 
 ## Copyright
-Copyright (c) 2012 Code for America. See [LICENSE][] for details.
+Copyright (c) 2014 Code for America. See [LICENSE][] for details.
 
 [license]: https://github.com/codeforamerica/adopt-a-hydrant/blob/master/LICENSE.md
 

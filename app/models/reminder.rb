@@ -1,7 +1,9 @@
 class Reminder < ActiveRecord::Base
-  attr_accessible :thing_id, :to_user_id
-  validates_presence_of :from_user, :to_user, :thing
-  belongs_to :from_user, class_name: "User"
-  belongs_to :to_user, class_name: "User"
+  include ActiveModel::ForbiddenAttributesProtection
+  belongs_to :from_user, class_name: 'User'
   belongs_to :thing
+  belongs_to :to_user, class_name: 'User'
+  validates :from_user, presence: true
+  validates :thing, presence: true
+  validates :to_user, presence: true
 end

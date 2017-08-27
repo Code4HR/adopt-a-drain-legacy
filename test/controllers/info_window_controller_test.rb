@@ -7,7 +7,7 @@ class InfoWindowControllerTest < ActionController::TestCase
     @user = users(:erik)
   end
 
-  test 'should thank the user if the user the hydrant is adopted by the user' do
+  test 'should thank the user if the hydrant is adopted by the user' do
     sign_in @user
     @thing.user_id = @user.id
     @thing.save!
@@ -17,7 +17,7 @@ class InfoWindowControllerTest < ActionController::TestCase
     assert_template 'users/thank_you'
     assert_select 'h2', 'Thank you for adopting this hydrant!'
     assert_select 'form#abandon_form' do
-      assert_select '[action=?]', "/things"
+      assert_select '[action=?]', '/things'
       assert_select '[method=?]', 'post'
     end
     assert_select 'input[name="_method"]' do
@@ -48,7 +48,7 @@ class InfoWindowControllerTest < ActionController::TestCase
     assert_template :adopt
     assert_select 'h2', 'Adopt this Hydrant'
     assert_select 'form#adoption_form' do
-      assert_select '[action=?]', "/things"
+      assert_select '[action=?]', '/things'
       assert_select '[method=?]', 'post'
     end
     assert_select 'input[name="_method"]' do
